@@ -1,5 +1,18 @@
 # F1WorldChampionsApp
 
+The project comprises of two components (season component: to display all F1 world champions starting from 2005 until
+now,  and the race-winners component to display list of the winners for every race for the
+selected year), a service class (ChampionshipsService) that makes http request to get seasons and race winners, in addition to the services, I've added a config file that holds all required endpoints and also a service class named httpService that assists with building the required endpoint.
+
+The project also makes use of sessionStorage to make ui experience even much better by checking the session storage for data before making actual service calls.
+
+Also made use of https://app.quicktype.io/ to help quickly generate all required model/interfaces.
+
+
+-------------------------------------
+
+# Setting up the project:
+
 Clone the repo
 
 git clone https://github.com/bryanforbes/intern-angular
