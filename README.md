@@ -23,12 +23,12 @@ git clone https://github.com/bryanforbes/intern-angular
 cd f1-world-champions-app
 
 
-Install npm packages
+# Install npm packages
 
 Install the npm packages described in the package.json and verify that it works:
 
-npm install
-npm start
+# npm install
+# npm start
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
