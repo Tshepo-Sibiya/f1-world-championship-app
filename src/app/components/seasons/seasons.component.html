@@ -1,1 +1,44 @@
-<p>seasons works!</p>
+<div *ngIf="loading">Loading data please waiting...</div>
+<div *ngIf="!loading">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"># Season</th>
+        <th scope="col">Winners</th>
+        <th scope="col">Information</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let season of seasons; index as i">
+        <td>
+
+          <a [routerLink]="" (click)="viewDetails(season.season)">
+            {{ season.season }}
+          </a>
+        </td>
+        <td>
+          <a [routerLink]="" (click)="viewDetails(season.season)"
+            ><label class="btn-success" clic ngbButtonLabel>
+              Winners <fa-icon [icon]="faInfoCircle"></fa-icon>
+            </label>
+          </a>
+        </td>
+        <td>
+          <a href="{{ season.url }}"
+            ><label class="btn-success" clic ngbButtonLabel>
+              View info <fa-icon [icon]="faGlobeAfrica"></fa-icon>
+            </label>
+          </a>
+        </td>
+        <td>
+
+          <a [routerLink]="" (click)="viewDetails(season.season)">
+            <fa-icon [icon]="faInfoCircle"></fa-icon
+              >
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

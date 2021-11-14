@@ -1,0 +1,8 @@
+#winnerDetailsBoard {
+    width: 100%;
+    background-color: rgba(206, 170, 170, 0.418);
+    padding: 50px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}

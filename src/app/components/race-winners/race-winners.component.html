@@ -1,1 +1,41 @@
-<p>race-winners works!</p>
+<div>
+  <div id="winnerDetailsBoard">
+    Season: {{ season }} | Position: 1 | Series: F1 | Results:
+    {{ races.length }}
+  </div>
+  <div style="margin-bottom: 20px">
+    <a [routerLink]="['/seasons']">
+      &lArr; Return to seasons
+    </a>
+  </div>
+  <div *ngIf="loading">
+      Loading data please waiting...
+  </div>
+
+  <div *ngIf="!loading">
+    <div *ngFor="let race of races; index as i">
+      <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+        <ngb-panel title="{{season}} {{race.raceName}}">
+          <ng-template ngbPanelContent>
+            <div class="card" style="width: 100%">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="text-align: center">
+                  <h3>Race results</h3>
+                </li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Position</label>: {{race.Results[0].position}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Driver</label>:  {{race.Results[0].Driver.givenName}} {{race.Results[0].Driver.familyName}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Laps</label>: {{race.Results[0].laps}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Grid</label>: {{race.Results[0].grid}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Time</label>:  {{race.time}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Status</label>: {{race.Results[0].status}}</li>
+                <li class="list-group-item"><label style="font-weight: bolder;">Points</label>: {{race.Results[0].points}}</li>
+              </ul>
+            </div>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+    </div>
+  </div>
+
+
+</div>
