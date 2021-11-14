@@ -9,6 +9,9 @@ The project also makes use of sessionStorage to make ui experience even much bet
 Also made use of https://app.quicktype.io/ to help quickly generate all required model/interfaces.
 
 
+# NB: The race-winners component uses Collapse cards to view more details for the race.
+
+
 -------------------------------------
 
 # Setting up the project:
