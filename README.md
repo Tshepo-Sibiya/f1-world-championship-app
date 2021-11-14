@@ -31,7 +31,7 @@ Install the npm packages described in the package.json and verify that it wo
 # npm start
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
 
 ## Development server
 
