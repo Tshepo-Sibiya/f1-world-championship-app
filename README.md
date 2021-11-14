@@ -3,6 +3,7 @@
 Clone the repo
 
 git clone https://github.com/bryanforbes/intern-angular
+
 cd f1-world-champions-app
 
 
