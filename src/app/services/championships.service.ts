@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpService } from '../shared/services/http.service';
-import { HttpConfigService } from '../shared/congfigs/http-config.service';
+import { HttpConfigService } from '../shared/configs/http-config.service';
 import { Observable } from 'rxjs';
 import { Season } from '../shared/models/season-model';
 

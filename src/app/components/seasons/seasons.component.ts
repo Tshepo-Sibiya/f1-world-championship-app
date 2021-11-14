@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ChampionshipsService } from 'src/app/services/championships.service';
-import { HttpConfigService } from 'src/app/shared/congfigs/http-config.service';
+import { HttpConfigService } from 'src/app/shared/configs/http-config.service';
 import {
   MRData,
   Season,
